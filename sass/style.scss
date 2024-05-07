@@ -1,7 +1,26 @@
 @use '../sass/variables' as v;
-@use "../sass/variables";
+@use "../sass/reset";
 
-
-h1 {
-    color: v.$color-primary;
+body {
+    font-family: v.$font-roboto;
+    font-weight: 500;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    
+    .logo {
+        width: 40%;
+        padding: 8px;
+    }
+    .location {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        background: #EAEAEA;
+        padding: 15px 0;
+        box-shadow: inset 0px 0px 15px -6px rgba(0,0,0,0.75);
+    }
 }
