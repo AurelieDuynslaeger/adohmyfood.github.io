@@ -1,15 +1,10 @@
-# Oh My Food
-
 <a name="readme-top"></a>
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/AurelieDuynslaeger/Memeteo-app/">
-    <img src="./assets/logo/ohmyfood@2x.svg" alt="Logo" width="300">
+    <img src="./assets/logo/ohmyfood-gradient.png" alt="Logo" width="300">
   </a>
-
-<h3 align="center">Oh My Food</h3>
 
 <!-- TABLE OF CONTENTS -->
 <details>
