@@ -1,7 +1,7 @@
-@use '/sass/variables' as v;
-@use "/sass/reset";
+@use '../sass/variables' as v;
+@use "../sass/variables";
 
 
 h1 {
-    color: v.$color-secondary;
+    color: v.$color-primary;
 }
