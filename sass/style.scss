@@ -104,6 +104,7 @@ a{
 
 .restaurants{
     background-color: #F6F6F6;
+    padding: 30px 0;
     .restaurants-cards{
         a {
             width: 100%;
@@ -150,29 +151,20 @@ a{
         }
     }
 }
-
-
-  
-  .lodgings-cards img {
-      width: 100%;
-      height: 120px;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-  }
-  .lodgings-cards .card-content {
-      padding: 8px 4px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-sizing: border-box;
-  }
-  .lodgings-cards .card-title {
-      margin-top: 8px;
-      margin-bottom: 4px;
-  }
-  .lodgings-cards .card-subtitle {
-      margin: 0;
-  }
-  .lodgings-cards .card-rating {
-      margin-top: 10px;
-  }
+ .footer{
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+    p {
+        font-family: v.$font-shrikhand;
+        margin-bottom: 10px;
+    }
+    .footer-nav ul li{
+        list-style: none;
+        font-weight: 300;
+        font-size: 12px;
+        i{
+            padding-right: 3px;
+        }
+    }
+ }
