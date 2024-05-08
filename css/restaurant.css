@@ -34,6 +34,9 @@ a {
   background-color: #F6F6F6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  position: absolute;
+  top: 250px;
+  width: 100%;
 }
 .restaurant-menu .restaurant-title {
   display: flex;
@@ -108,6 +111,8 @@ a {
   background-color: #353535;
   color: white;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
 }
 .footer p {
   font-family: "Shrikhand", serif;
