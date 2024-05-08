@@ -13,6 +13,7 @@ a{
     color: unset;
 }
 
+
 .header{
     width: 100%;
     display: flex;
@@ -28,10 +29,13 @@ a{
    
 }
 
+.restaurant-cover{
+    position: relative;
+}
+
 .restaurant-cover img{
     width: 100%;
     object-fit: cover;
-   
 }
 
 .restaurant-menu {
@@ -39,7 +43,7 @@ a{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: absolute;
-    top: 250px;
+    top:250px;
     width: 100%;
 
     .restaurant-title{
@@ -122,7 +126,8 @@ a{
     background-color: #353535;
     color: white;
     padding: 10px;
-    position: absolute;
+    width: 100%;
+    position:fixed;
     bottom: 0;
     p {
         font-family: v.$font-shrikhand;

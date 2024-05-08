@@ -25,6 +25,10 @@ a {
   margin-left: 10px;
 }
 
+.restaurant-cover {
+  position: relative;
+}
+
 .restaurant-cover img {
   width: 100%;
   object-fit: cover;
@@ -111,7 +115,8 @@ a {
   background-color: #353535;
   color: white;
   padding: 10px;
-  position: absolute;
+  width: 100%;
+  position: fixed;
   bottom: 0;
 }
 .footer p {
