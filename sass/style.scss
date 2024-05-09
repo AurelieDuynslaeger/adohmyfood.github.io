@@ -32,7 +32,7 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 2s ease 1s forwards; /* fondu après 2 sec */
+    animation: fadeOut 1.5s ease 1s forwards; /* fondu après 2 sec */
 
     &::before {
         content: "Oh My Food"; // Ajoutez le texte "Oh My Food"
