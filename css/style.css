@@ -263,9 +263,6 @@ h5 {
     flex-basis: 45%;
     height: fit-content;
   }
-  .restaurants .restaurants-cards .card {
-    width: 90%;
-  }
   .footer {
     display: flex;
     justify-content: right;
