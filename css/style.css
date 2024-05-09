@@ -40,18 +40,16 @@ h5 {
 }
 .loader::before {
   content: "Oh My Food";
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   font-family: "Shrikhand", serif;
   color: #9356DC;
-  border: 5px solid #f3f3f3; /* Couleur de la bordure */
-  border-top: 5px solid #9356DC; /* Couleur de la partie supérieure de la bordure */
-  border-radius: 50%; /* Forme de la bordure */
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite; /* Animation de rotation */
+  width: 150px;
+  height: 150px;
+  animation: spin 1s linear infinite; /* rotation */
 }
 
+/* rotation de oh my food*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -60,7 +58,7 @@ h5 {
     transform: rotate(360deg);
   }
 }
-/* Animation de fondu */
+/* fondu */
 @keyframes fadeOut {
   0% {
     opacity: 1; /* Opacité initiale */
