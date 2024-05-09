@@ -77,6 +77,8 @@ a {
   background-color: white;
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
   margin-top: 20px;
+  position: relative;
+  /* icone qui apparait pour le survol d'un item */
 }
 .restaurant-menu .menu-items .items .item .item-content {
   display: flex;
@@ -96,6 +98,27 @@ a {
 .restaurant-menu .menu-items .items .item .item-content .item-price p {
   margin: 0;
   font-size: 12px;
+}
+.restaurant-menu .menu-items .items .item .check-icon {
+  display: none;
+  width: 5%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.restaurant-menu .menu-items .items .item .check-icon i {
+  color: white;
+  font-size: 24px;
+}
+.restaurant-menu .menu-items .items .item:hover .check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #99E2D0;
 }
 .restaurant-menu .btn {
   border: none;
