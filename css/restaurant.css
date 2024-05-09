@@ -211,4 +211,49 @@ a {
   animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
+@media screen and (min-width: 1024px) {
+  .header .logo {
+    width: 20%;
+    padding: 30px;
+  }
+  .restaurant-menu {
+    top: 50%;
+    left: 8%;
+    width: 85%;
+    margin: auto;
+  }
+  .restaurant-menu .menu-items {
+    margin: 10px;
+  }
+  .restaurant-menu .menu-items .items {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .restaurant-menu .menu-items .items .item {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 0;
+    position: relative;
+  }
+  .footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100px;
+  }
+  .footer p {
+    margin-bottom: 0;
+    order: 2;
+  }
+  .footer .footer-nav ul {
+    display: flex;
+    margin-inline: 20px;
+  }
+  .footer .footer-nav ul li {
+    padding-inline: 5px;
+  }
+}
+
 /*# sourceMappingURL=restaurant.css.map */
