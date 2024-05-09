@@ -213,6 +213,7 @@ h5 {
   background-color: #353535;
   color: white;
   padding: 20px;
+  width: 100%;
 }
 .footer p {
   font-family: "Shrikhand", serif;
@@ -225,6 +226,63 @@ h5 {
 }
 .footer .footer-nav ul li i {
   padding-right: 3px;
+}
+
+@media screen and (min-width: 1024px) {
+  h3 {
+    padding-left: 50px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .header .logo {
+    width: 20%;
+    padding: 30px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .steps {
+    height: 150px;
+  }
+  .steps .steps-items {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  }
+  .steps .step {
+    flex-basis: 30%;
+  }
+  .restaurants .restaurants-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .restaurants .restaurants-cards a {
+    flex-basis: 45%;
+    height: fit-content;
+  }
+  .restaurants .restaurants-cards .card {
+    width: 90%;
+  }
+  .footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100px;
+  }
+  .footer p {
+    margin-bottom: 0;
+    order: 2;
+  }
+  .footer .footer-nav ul {
+    display: flex;
+    margin-inline: 30px;
+  }
+  .footer .footer-nav ul li {
+    padding-inline: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

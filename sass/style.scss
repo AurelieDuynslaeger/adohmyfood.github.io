@@ -227,6 +227,7 @@ h5{
     background-color: #353535;
     color: white;
     padding: 20px;
+    width: 100%;
     p {
         font-family: v.$font-shrikhand;
         margin-bottom: 10px;
@@ -239,4 +240,70 @@ h5{
             padding-right: 3px;
         }
     }
+ }
+
+ @media screen and (min-width: 1024px){
+    h3{
+        padding-left: 50px;
+    }
+    h5{
+        font-size : 20px;
+    }
+    .header{
+        .logo {
+            width: 20%;
+            padding: 30px;
+        }
+    }
+    .hero{
+        h1{
+           font-size: 30px;
+        }
+    }
+
+    .steps{
+        height: 150px;
+        .steps-items{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin: auto;
+        }
+        .step{
+            flex-basis: 30%;  
+        }
+    }
+
+    .restaurants{
+        .restaurants-cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            a {
+                flex-basis: 45%;
+                height: fit-content;
+            }
+            .card{
+                width: 90%;
+            }
+        }
+    }
+
+    .footer{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 100px;
+        p {
+            margin-bottom: 0;
+            order: 2;
+        }
+        .footer-nav ul{
+            display: flex;
+            margin-inline: 30px;
+        }
+        .footer-nav ul li{
+            padding-inline: 10px;
+        }
+     }
  }
