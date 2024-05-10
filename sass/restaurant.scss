@@ -110,7 +110,6 @@ a{
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
             }
-
             .check-icon i {
                 color: white; 
                 font-size: 24px; 
@@ -126,6 +125,12 @@ a{
                 top: 50%;
                 transform: translateY(-50%);
                 background-color: v.$color-tertiary;
+            }
+            .item-price {
+                position: absolute;
+                right: 80px;
+                bottom: 10px;
+                transform: translateY(-50%);
             }
             }
         }

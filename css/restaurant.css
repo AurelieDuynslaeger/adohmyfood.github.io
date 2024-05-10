@@ -120,6 +120,12 @@ a {
   transform: translateY(-50%);
   background-color: #99E2D0;
 }
+.restaurant-menu .menu-items .items .item:hover .item-price {
+  position: absolute;
+  right: 80px;
+  bottom: 10px;
+  transform: translateY(-50%);
+}
 .restaurant-menu .btn {
   border: none;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
