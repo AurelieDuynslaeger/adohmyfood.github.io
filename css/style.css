@@ -235,6 +235,41 @@ h5 {
   padding-right: 3px;
 }
 
+@media (min-width: 767.98px) {
+  .steps {
+    height: 150px;
+  }
+  .steps .steps-items {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  }
+  .steps .step {
+    flex-basis: 28%;
+    font-size: 12px;
+  }
+  .steps .step span {
+    left: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100px;
+  }
+  .footer p {
+    margin-bottom: 0;
+    order: 2;
+  }
+  .footer .footer-nav ul {
+    display: flex;
+    margin-inline: 30px;
+  }
+  .footer .footer-nav ul li {
+    padding-inline: 10px;
+  }
+}
 @media screen and (min-width: 1024px) {
   h3 {
     padding-left: 50px;
@@ -269,23 +304,6 @@ h5 {
   .restaurants .restaurants-cards a {
     flex-basis: 45%;
     height: fit-content;
-  }
-  .footer {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100px;
-  }
-  .footer p {
-    margin-bottom: 0;
-    order: 2;
-  }
-  .footer .footer-nav ul {
-    display: flex;
-    margin-inline: 30px;
-  }
-  .footer .footer-nav ul li {
-    padding-inline: 10px;
   }
 }
 
