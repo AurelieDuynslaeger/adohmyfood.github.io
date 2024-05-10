@@ -284,15 +284,6 @@ h5 {
   .hero h1 {
     font-size: 30px;
   }
-  .steps {
-    height: 150px;
-  }
-  .steps .steps-items {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: auto;
-  }
   .steps .step {
     flex-basis: 30%;
   }

@@ -46,7 +46,6 @@ a{
     position: absolute;
     top:250px;
     width: 100%;
-
     .restaurant-title{
         display: flex;
         justify-content: space-around;
@@ -147,10 +146,6 @@ a{
     }
 }
 
-
-
-
-
 .footer{
     background-color: #353535;
     color: white;
@@ -230,16 +225,15 @@ a{
     animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 767.98px){
     .header{
         .logo {
-            width: 20%;
+            width: 30%;
             padding: 30px;
         }
     }
-
     .restaurant-menu {
-        top: 50%;
+        top: 60%;
         left: 8%;
         width: 85%;
         margin: auto;
@@ -265,7 +259,7 @@ a{
         align-items: center;
         height: 100px;
         p {
-            margin-bottom: 0;
+            margin: 0;
             order: 2;
         }
         .footer-nav ul{
@@ -276,4 +270,18 @@ a{
             padding-inline: 5px;
         }
      }
+ }
+
+@media screen and (min-width: 1024px){
+    .header{
+        .logo {
+            width: 20%;
+        }
+    }
+    .restaurant-cover{
+        height: 450px;
+        & img {
+            height: 100%;
+        }
+    }
  }
