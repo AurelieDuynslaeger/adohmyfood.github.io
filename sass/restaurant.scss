@@ -76,11 +76,11 @@ a{
             }
         
         .item{
+            @include m.box-shadow();
             width: 90%;
             margin: auto;
             border-radius: 15px;
             background-color: white;
-            box-shadow: -1px 5px 14px 0px rgba(0,0,0,0.34);
             margin-top: 20px;
             position: relative;
             .item-content{
@@ -117,9 +117,7 @@ a{
         }
         .item:hover{
             .check-icon {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+               @include m.flex-center();
                 position: absolute;
                 right: 0;
                 top: 50%;
@@ -128,26 +126,14 @@ a{
             }
             .item-price {
                 position: absolute;
-                right: 80px;
+                right: 70px;
                 bottom: 10px;
-                transform: translateY(-50%);
             }
             }
         }
     }
     .btn {
-        border: none;
-        background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
-        color : white;
-        padding: 12px;
-        border-radius: 25px;
-        font-weight: 400;
-        font-size: 12px;
-        width: 30%;
-        &:hover{
-            box-shadow: -1px 5px 14px 0px rgba(0,0,0,0.34);
-            background: linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%);
-    }
+        @include m.button(linear-gradient(0deg,#9356dc 0%, #ff79da 100%), white, linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%));
     }
 }
 
@@ -230,7 +216,7 @@ a{
     animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: 767.98px){
+@media screen and (min-width: v.$md-breakpoint){
     .header{
         .logo {
             width: 30%;
@@ -277,7 +263,7 @@ a{
      }
  }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: v.$lg-breakpoint){
     .header{
         .logo {
             width: 20%;

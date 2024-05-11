@@ -1,12 +1,27 @@
 @mixin button($background, $text-color, $hover-background) {
     background: $background;
     color: $text-color;
-    padding: 15px;
+    padding: 14px 28px;
     border-radius: 25px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     &:hover {
       box-shadow: -1px 5px 14px 0px rgba(0,0,0,0.34);
       background: $hover-background;
     }
   }
+
+  @mixin box-shadow(){
+    box-shadow: -1px 5px 14px 0px rgba(0,0,0,0.34);
+  }
+  @mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin flex-col(){
+    display: flex;
+    flex-direction: column;
+  }
+ 
