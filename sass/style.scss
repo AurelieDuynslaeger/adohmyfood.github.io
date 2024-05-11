@@ -31,20 +31,16 @@ h5{
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 9999; 
     @include m.flex-center();
-    animation: fadeOut 1.5s ease 1s forwards; /* fondu après 2 sec */
+    animation: fadeOut 2s ease 1s forwards; /* fondu après 2 sec */
 
     &::before {
-        content: "Oh My Food"; // Ajoutez le texte "Oh My Food"
-        font-size: 30px; // Taille de la police
-        font-weight: bold; // Gras
-        font-family: v.$font-shrikhand;
-        color: v.$color-primary;
-        // border: 5px solid #f3f3f3; /* Couleur de la bordure */
-        // border-top: 5px solid v.$color-primary; /* Couleur de la partie supérieure de la bordure */
-        // border-radius: 50%; /* Forme de la bordure */
-        width: 150px;
-        height: 150px;
-        animation: spin 1s linear infinite; /* rotation */
+        content: ""; 
+        background-image: url('../assets/logo/loader.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+        animation: spin 3s linear infinite; /* rotation */
     }
 }
 
