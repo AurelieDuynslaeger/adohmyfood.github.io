@@ -48,7 +48,7 @@ h5 {
   animation: spin 3s linear infinite; /* rotation */
 }
 
-/* rotation de oh my food*/
+/* rotation du svg ohmyfood.loading */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -60,11 +60,11 @@ h5 {
 /* fondu */
 @keyframes fadeOut {
   0% {
-    opacity: 1; /* Opacité initiale */
+    opacity: 1;
   }
   100% {
-    opacity: 0; /* Opacité finale */
-    display: none; /* Cache le loader après la fin de l'animation */
+    opacity: 0;
+    display: none;
   }
 }
 .header {

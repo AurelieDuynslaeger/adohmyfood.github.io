@@ -2,7 +2,6 @@
 @use '../sass/mixins' as m;
 @use "../sass/variables";
 
-
 body {
     font-family: v.$font-roboto;
     font-weight: 500;
@@ -13,7 +12,6 @@ a{
     text-decoration: none;
     color: unset;
 }
-
 
 .header{
     width: 100%;
@@ -40,7 +38,7 @@ a{
 }
 
 .restaurant-menu {
-    background-color: #F6F6F6;
+    background-color: v.$color-bg-primary;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: absolute;
@@ -80,7 +78,6 @@ a{
             width: 90%;
             margin: auto;
             border-radius: 15px;
-            background-color: white;
             margin-top: 20px;
             position: relative;
             .item-content{
