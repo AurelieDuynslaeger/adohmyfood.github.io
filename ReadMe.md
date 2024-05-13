@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/AurelieDuynslaeger/Memeteo-app/">
+  <a href="https://github.com/AurelieDuynslaeger/adohmyfood.github.io">
     <img src="./assets/logo/ohmyfood-gradient.png" alt="Logo" width="300">
   </a>
 
@@ -19,9 +19,9 @@
 </details>
 
 <p align="center">
-    <a href="https://github.com/AurelieDuynslaeger/Memeteo-app/issues">Report Bug</a>
+    <a href="https://github.com/AurelieDuynslaeger/adohmyfood.github.io/issues">Report Bug</a>
     ·
-    <a href="https://github.com/AurelieDuynslaeger/Memeteo-app/issues">Request Feature</a>
+    <a href="https://github.com/AurelieDuynslaeger/adohmyfood.github.io/issues">Request Feature</a>
   </p>
 </div>
 
