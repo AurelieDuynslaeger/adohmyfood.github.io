@@ -116,12 +116,16 @@ a {
   align-items: end;
   justify-content: space-between;
   padding: 15px;
+  width: 100%;
 }
-.restaurant-menu .menu-items .items .item .item-content .item-title {
+.restaurant-menu .menu-items .items .item .item-content .item-txt {
+  width: 90%;
+}
+.restaurant-menu .menu-items .items .item .item-content .item-txt .item-title {
   margin: 0;
   font-size: 18px;
 }
-.restaurant-menu .menu-items .items .item .item-content .item-subtitle {
+.restaurant-menu .menu-items .items .item .item-content .item-txt .item-subtitle {
   margin-top: 5px;
   font-weight: 200;
   font-size: 15px;
@@ -132,7 +136,7 @@ a {
 }
 .restaurant-menu .menu-items .items .item .check-icon {
   display: none;
-  width: 15%;
+  width: 10%;
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -147,7 +151,7 @@ a {
   align-items: center;
   position: absolute;
   right: 0;
-  top: 49%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: #99E2D0;
 }
@@ -156,8 +160,8 @@ a {
   right: 70px;
   bottom: 10px;
 }
-.restaurant-menu .menu-items .items .item:hover .item-title, .restaurant-menu .menu-items .items .item:hover .item-subtitle {
-  max-width: 90%;
+.restaurant-menu .menu-items .items .item:hover .item-txt .item-title, .restaurant-menu .menu-items .items .item:hover .item-txt .item-subtitle {
+  max-width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -263,7 +267,7 @@ a {
   animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header .logo {
     width: 30%;
     padding: 30px;
@@ -296,6 +300,9 @@ a {
     margin-left: 0;
     position: relative;
   }
+  .restaurant-menu .menu-items .items .item:hover .item-price {
+    right: 80px;
+  }
   .footer {
     display: flex;
     justify-content: right;
@@ -314,7 +321,7 @@ a {
     padding-inline: 5px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1160px) {
   .header .logo {
     width: 20%;
   }
@@ -329,6 +336,11 @@ a {
   }
   .restaurant-menu .restaurant-title .card-like i {
     right: 25%;
+  }
+  .restaurant-menu .menu-items .items .item:hover .item-price {
+    position: absolute;
+    right: 110px;
+    bottom: 10px;
   }
   .order {
     width: 60%;
