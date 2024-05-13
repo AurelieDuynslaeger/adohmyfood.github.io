@@ -209,18 +209,6 @@ h5 {
   right: 20px;
   bottom: 20px;
 }
-.restaurants .restaurants-cards .card .card-content .card-like .full {
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-.restaurants .restaurants-cards .card .card-content .card-like .full:active {
-  opacity: 1;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 
 .footer {
   background-color: #353535;
