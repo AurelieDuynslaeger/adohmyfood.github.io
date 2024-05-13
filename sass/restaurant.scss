@@ -369,5 +369,14 @@ a{
     }
 
     
+@media screen and (min-width: 1161px){
+    .restaurant-menu{
+            .item:hover{
+                .item-price {
+                    right: 400px;
+                }
+            }
 
+        }
+    }
  
