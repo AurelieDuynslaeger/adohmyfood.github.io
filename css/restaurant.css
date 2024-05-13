@@ -1,24 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-html, body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: auto;
 }
 
 a {
   text-decoration: none;
   color: unset;
-}
-
-main {
-  flex-grow: 1;
-  height: 100%;
 }
 
 .header {
@@ -36,11 +32,13 @@ main {
 }
 
 .restaurant-cover {
+  z-index: 1;
   position: relative;
 }
 
 .restaurant-cover img {
   width: 100%;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -48,15 +46,17 @@ main {
   background-color: rgb(246, 246, 246);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  position: absolute;
-  top: 300px;
+  margin-top: -100px;
+  z-index: 2;
   width: 100%;
+  position: relative;
 }
 .restaurant-menu .restaurant-title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  padding: 20px;
 }
 .restaurant-menu .restaurant-title h3 {
   font-family: "Shrikhand", serif;
@@ -83,6 +83,9 @@ main {
 }
 .restaurant-menu .menu-items {
   margin: 10px;
+}
+.restaurant-menu .menu-items .items {
+  margin-bottom: 30px;
 }
 .restaurant-menu .menu-items .items .items-title {
   position: relative;
@@ -189,6 +192,7 @@ main {
   color: white;
   padding: 10px;
   width: 100%;
+  margin-top: auto;
 }
 .footer p {
   font-family: "Shrikhand", serif;
@@ -264,8 +268,6 @@ main {
     padding: 30px;
   }
   .restaurant-menu {
-    top: 60%;
-    left: 8%;
     width: 85%;
     margin: auto;
   }

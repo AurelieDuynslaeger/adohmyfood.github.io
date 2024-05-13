@@ -62,10 +62,6 @@ h5{
     }
 }
 
-
-  
-
-
 .header{
     width: 100%;
     text-align: center;
@@ -194,6 +190,18 @@ h5{
                     right: 20px;
                     bottom: 20px;
                 }
+                .card-like .full{
+                    opacity: 0;
+                    transition-property: all;
+                    transition-duration: 0.5s;
+                    &:hover{
+                        opacity: 1;
+                        background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
             }
         }
     }
@@ -289,22 +297,6 @@ p {
             a {
                 flex-basis: 45%;
                 height: fit-content;
-            }
-            .card{
-                .card-content{
-                    .card-like .full{
-                        opacity: 0;
-                        transition-property: all;
-                        transition-duration: 0.5s;
-                        &:hover{
-                            opacity: 1;
-                            background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
-                            -webkit-background-clip: text;
-                            background-clip: text;
-                            color: transparent;
-                        }
-                    }
-                }
             }
         }
     }
