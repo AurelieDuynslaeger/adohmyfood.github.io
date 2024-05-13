@@ -29,6 +29,7 @@ h5{
     z-index: 9999; 
     @include m.flex-center();
     animation: fadeOut 2s ease 1s forwards; /* fondu après 2 sec */
+  
 
     &::before {
         content: ""; 
@@ -38,6 +39,7 @@ h5{
         width: 300px;
         height: 300px;
         animation: spin 3s linear infinite; /* rotation */
+        -moz-animation: spin 3s linear infinite;
     }
 }
 
@@ -59,6 +61,7 @@ h5{
     100% {
         opacity: 0; 
         display: none;
+        z-index: -1;
     }
 }
 
@@ -108,7 +111,7 @@ h5{
         width: 100%;
         @include m.flex-col();
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 300px;
         .step{
             width: 85%;
@@ -239,8 +242,8 @@ p {
             margin: auto;
         }
         .step{
-            flex-basis: 28%; 
-            font-size: 16px; 
+            font-size: 15px; 
+            gap: 5px;
             span{
                 left:0;
             }
