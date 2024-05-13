@@ -11,6 +11,8 @@
   <summary>Table des matières</summary>
   <ol>
     <li><a href="#a-propos-du-projet">À propos du projet</a></li>
+    <li><a href="#langagesutilises">À propos du projet</a></li>
+    <li><a href="#missions">À propos du projet</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -38,14 +40,19 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 Finis, les temps d'attente au restaurant !
 
 
-### Langages utilisés
+## Langages utilisés
 
 * [![HTML5][html.com]][html-url]
 * [![CSS3][css.com]][css-url]
 * [![SASS][sass.com]][sass-url]
 
+## Missions
 
-### Installation
+* Mobile First
+* animations pures css
+* sass est un plus
+
+## Installation
 
 1. Clonez le repository de l'application
    ```sh
