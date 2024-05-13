@@ -46,12 +46,31 @@ a{
     width: 100%;
     .restaurant-title{
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
+        position: relative;
         h3{
             font-family: v.$font-shrikhand;
-            font-size: 35px;
-
+            font-size: 30px;
+            margin-left: 20px;
+        }
+        .card-like i {
+            font-size: 25px;
+            position: absolute;
+            right: 5%;
+            bottom: 40%;
+        }
+        .card-like .full{
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 0.5s;
+            &:hover{
+                opacity: 1;
+                background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
         }
     }
     .menu-items{
@@ -83,20 +102,17 @@ a{
             .item-content{
                 display: flex;
                 align-items: end;
-                justify-content: space-around;
+                justify-content: space-between;
                 padding: 15px;
-                .item-txt{
-                    width: 100%;
-                    .item-title{
-                        margin: 0;
-                        font-size: 23px;
-                    }
-                    .item-subtitle{
-                   
-                        margin-top: 5px;
-                        font-weight: 200;
-                        font-size: 17px;
-                    }
+                .item-title{
+                    margin: 0;
+                    font-size: 23px;
+                }
+                .item-subtitle{
+               
+                    margin-top: 5px;
+                    font-weight: 200;
+                    font-size: 17px;
                 }
                 .item-price p {
                     margin: 0;
@@ -235,6 +251,12 @@ a{
         left: 8%;
         width: 85%;
         margin: auto;
+        .restaurant-title{
+           justify-content: center;
+            .card-like i {
+                right: 22%;
+            }
+        }
         .menu-items{
             margin: 10px;
             .items{
@@ -282,4 +304,16 @@ a{
             height: 100%;
         }
     }
- }
+    .restaurant-menu{
+        .restaurant-title {
+            h3{
+                font-size: 35px;
+            }
+                .card-like i {
+                    right: 25%;
+                }
+            }
+
+    }
+    }
+ 
