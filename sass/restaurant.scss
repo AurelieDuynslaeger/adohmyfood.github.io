@@ -2,15 +2,30 @@
 @use '../sass/mixins' as m;
 @use "../sass/variables";
 
-body {
+html, body {
     font-family: v.$font-roboto;
     font-weight: 500;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    height: auto;
 }
 
 a{
     text-decoration: none;
     color: unset;
+}
+
+// .main-container {
+//     display: flex;
+//     flex-direction: column;
+//     height: fit-content; 
+//     position: relative;
+// }
+main{
+    flex-grow: 1;
+    height: 100%;
 }
 
 .header{
@@ -42,7 +57,7 @@ a{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: absolute;
-    top:250px;
+    top: 300px;
     width: 100%;
     .restaurant-title{
         display: flex;
@@ -51,7 +66,7 @@ a{
         position: relative;
         h3{
             font-family: v.$font-shrikhand;
-            font-size: 30px;
+            font-size: 25px;
             margin-left: 20px;
         }
         .card-like i {
@@ -106,7 +121,7 @@ a{
                 padding: 15px;
                 .item-title{
                     margin: 0;
-                    font-size: 23px;
+                    font-size: 18px;
                 }
                 .item-subtitle{
                
@@ -155,8 +170,16 @@ a{
             }
         }
     }
-    .btn {
-        @include m.button(linear-gradient(0deg,#9356dc 0%, #ff79da 100%), white, linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%));
+    .order{
+        width: 50%;
+        margin: 35px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+            @include m.button(linear-gradient(0deg,#9356dc 0%, #ff79da 100%), white, linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%));
+            width: 50%;
+        }
     }
 }
 
@@ -165,8 +188,6 @@ a{
     color: white;
     padding: 10px;
     width: 100%;
-    position:fixed;
-    bottom: 0;
     p {
         font-family: v.$font-shrikhand;
         margin-bottom: 10px;
@@ -314,6 +335,17 @@ a{
                 }
             }
 
+    }
+    .order{
+        width: 60%;
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+            @include m.button(linear-gradient(0deg,#9356dc 0%, #ff79da 100%), white, linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%));
+            width: 40%;
+        }
     }
     }
  

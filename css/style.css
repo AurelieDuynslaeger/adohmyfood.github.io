@@ -103,12 +103,16 @@ h5 {
   font-weight: 200;
 }
 .hero .btn {
+  border: none;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   color: white;
   padding: 14px 28px;
   border-radius: 25px;
   font-weight: 400;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero .btn:hover {
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);

@@ -1,10 +1,14 @@
 @mixin button($background, $text-color, $hover-background) {
+    border: none;
     background: $background;
     color: $text-color;
     padding: 14px 28px;
     border-radius: 25px;
     font-weight: 400;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
       box-shadow: -1px 5px 14px 0px rgba(0,0,0,0.34);
       background: $hover-background;
