@@ -67,6 +67,39 @@ h5 {
     display: none;
   }
 }
+.heart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 20px;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.heart:hover:before,
+.heart:hover:after {
+  height: 0;
+  transition: height 0.3s;
+}
+
 .header {
   width: 100%;
   text-align: center;
@@ -205,20 +238,11 @@ h5 {
 }
 .restaurants .restaurants-cards .card .card-content .card-like i {
   font-size: 25px;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
 }
-.restaurants .restaurants-cards .card .card-content .card-like .full {
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-.restaurants .restaurants-cards .card .card-content .card-like .full:active {
-  opacity: 1;
+.restaurants .restaurants-cards .card .card-content .card-like:hover .fa-heart::before {
+  content: "\f004";
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
 }
 
@@ -306,18 +330,6 @@ h5 {
     flex-basis: 45%;
     height: fit-content;
   }
-  .restaurants .restaurants-cards .card .card-content .card-like .full {
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 0.5s;
-  }
-  .restaurants .restaurants-cards .card .card-content .card-like .full:hover {
-    opacity: 1;
-    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

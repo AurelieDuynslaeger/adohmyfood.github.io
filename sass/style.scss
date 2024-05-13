@@ -62,6 +62,10 @@ h5{
     }
 }
 
+
+  
+
+
 .header{
     width: 100%;
     text-align: center;
@@ -186,15 +190,20 @@ h5{
                 }
                 .card-like i {
                     font-size: 25px;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 20px;
                 }
-                .card-like{
-                    &:hover{
-                        .fa-heart::before{
-                            content: "\f004"; 
-                            background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
-                            -webkit-background-clip: text;
-                            color: transparent;
-                        }
+                .card-like .full{
+                    opacity: 0;
+                    transition-property: all;
+                    transition-duration: 0.5s;
+                    &:active{
+                        opacity: 1;
+                        background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
                     }
                 }
             }
@@ -266,6 +275,7 @@ p {
     h5{
         font-size : 20px;
     }
+
     .header{
         .logo {
             width: 20%;
@@ -292,7 +302,22 @@ p {
                 flex-basis: 45%;
                 height: fit-content;
             }
+            .card{
+                .card-content{
+                    .card-like .full{
+                        opacity: 0;
+                        transition-property: all;
+                        transition-duration: 0.5s;
+                        &:hover{
+                            opacity: 1;
+                            background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
         }
     }
-
  }

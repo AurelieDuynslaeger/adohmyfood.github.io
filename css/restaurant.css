@@ -36,7 +36,7 @@ a {
 }
 
 .restaurant-menu {
-  background-color: #F6F6F6;
+  background-color: rgb(246, 246, 246);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   position: absolute;
@@ -71,11 +71,10 @@ a {
   background-color: #99E2D0;
 }
 .restaurant-menu .menu-items .items .item {
+  box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
   width: 90%;
   margin: auto;
   border-radius: 15px;
-  background-color: white;
-  box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
   margin-top: 20px;
   position: relative;
   /* icone qui apparait pour le survol d'un item */
@@ -112,8 +111,8 @@ a {
 }
 .restaurant-menu .menu-items .items .item:hover .check-icon {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: absolute;
   right: 0;
   top: 50%;
@@ -126,14 +125,12 @@ a {
   bottom: 10px;
 }
 .restaurant-menu .btn {
-  border: none;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   color: white;
-  padding: 12px;
+  padding: 14px 28px;
   border-radius: 25px;
   font-weight: 400;
-  font-size: 12px;
-  width: 30%;
+  font-size: 18px;
 }
 .restaurant-menu .btn:hover {
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
@@ -216,7 +213,7 @@ a {
   animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .header .logo {
     width: 30%;
     padding: 30px;
