@@ -124,21 +124,15 @@ a {
 .restaurant-menu .menu-items .items .item .item-content .item-subtitle {
   margin-top: 5px;
   font-weight: 200;
-  font-size: 17px;
+  font-size: 15px;
 }
 .restaurant-menu .menu-items .items .item .item-content .item-price p {
   margin: 0;
   font-size: 12px;
 }
-.restaurant-menu .menu-items .items .item .item-content .item-title, .restaurant-menu .menu-items .items .item .item-content .item-subtitle {
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .restaurant-menu .menu-items .items .item .check-icon {
   display: none;
-  width: 5%;
+  width: 15%;
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -153,7 +147,7 @@ a {
   align-items: center;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 49%;
   transform: translateY(-50%);
   background-color: #99E2D0;
 }
@@ -162,8 +156,14 @@ a {
   right: 70px;
   bottom: 10px;
 }
+.restaurant-menu .menu-items .items .item:hover .item-title, .restaurant-menu .menu-items .items .item:hover .item-subtitle {
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .restaurant-menu .order {
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 12px;
   display: flex;
