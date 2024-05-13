@@ -11,8 +11,8 @@
   <summary>Table des matières</summary>
   <ol>
     <li><a href="#a-propos-du-projet">À propos du projet</a></li>
-    <li><a href="#langagesutilises">À propos du projet</a></li>
-    <li><a href="#missions">À propos du projet</a></li>
+    <li><a href="#langagesutilises">langages Utilisés</a></li>
+    <li><a href="#missions">Missions</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
