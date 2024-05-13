@@ -164,7 +164,8 @@ a {
 }
 .restaurant-menu .order {
   width: 50%;
-  margin: 35px auto;
+  margin: auto;
+  padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,6 +267,9 @@ a {
   .header .logo {
     width: 30%;
     padding: 30px;
+  }
+  .restaurant-cover {
+    margin-bottom: -150px;
   }
   .restaurant-menu {
     width: 85%;
