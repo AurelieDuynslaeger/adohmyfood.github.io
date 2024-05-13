@@ -67,7 +67,7 @@ Finis, les temps d'attente au restaurant !
 Aurélie D. - [GitHub](https://github.com/AurelieDuynslaeger/)
 
 
-Lien du projet : [https://adohmyfood.github.io/](https://adohmyfood.github.io/)
+Lien du projet : [https://aurelieduynslaeger.github.io/adohmyfood.github.io/](https://aurelieduynslaeger.github.io/adohmyfood.github.io/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
