@@ -56,7 +56,7 @@ Finis, les temps d'attente au restaurant !
 
 1. Clonez le repository de l'application
    ```sh
-   git clone https://github.com/AurelieDuynslaeger/AurelieDuynslaegerOhmyfood.github.io.git
+   git clone https://github.com/AurelieDuynslaeger/adohmyfood.github.io.git
    ```
 
 2. Lancez l'application avec Live Server !
