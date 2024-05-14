@@ -30,7 +30,6 @@ h5{
     @include m.flex-center();
     animation: fadeOut 2s ease 1s forwards; /* fondu après 2 sec */
   
-
     &::before {
         content: ""; 
         background-image: url('../assets/logo/loader.svg');
@@ -52,7 +51,6 @@ h5{
         transform: rotate(360deg);
     }
 }
-
 /* fondu */
 @keyframes fadeOut {
     0% {
@@ -210,29 +208,29 @@ h5{
     }
 }
 .footer{
-background-color: #353535;
-color: white;
-padding: 20px;
-width: 100%;
-p {
-    font-family: v.$font-shrikhand;
-    margin-bottom: 10px;
-}
-.footer-nav ul li{
-    list-style: none;
-    font-weight: 300;
-    font-size: 12px;
-    i{
-        padding-right: 3px;
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    p {
+        font-family: v.$font-shrikhand;
+        margin-bottom: 10px;
     }
-}
+    .footer-nav ul li{
+        list-style: none;
+        font-weight: 300;
+        font-size: 12px;
+        i{
+            padding-right: 3px;
+        }
+    }
 }
 
 .card, .step{
     @include m.box-shadow();
 }
 
- @media (min-width: v.$md-breakpoint) {
+@media (min-width: v.$md-breakpoint) {
     .steps{
         height: 150px;
         .steps-items{
@@ -265,8 +263,8 @@ p {
         .footer-nav ul li{
             padding-inline: 10px;
         }
-     }
- }
+    }
+}
  @media screen and (min-width: v.$lg-breakpoint){
     h3{
         padding-left: 50px;

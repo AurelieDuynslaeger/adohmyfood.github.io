@@ -176,12 +176,42 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.restaurant-menu .menu-items .item:not(:hover) .price {
+  right: 1rem;
+}
+.restaurant-menu .menu-items .item:not(:hover) .check-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideRight 0.5s ease forwards, fadeOut 0.5s ease forwards;
+}
 @keyframes slideLeft {
   0% {
     transform: translateX(25%);
   }
   100% {
     transform: translateX(0%);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(10%);
+    display: none;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 .restaurant-menu .order {

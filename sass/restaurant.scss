@@ -169,7 +169,17 @@ a{
                     white-space: nowrap;
                     }
                 }
-            }  
+            } 
+        &:not(:hover){
+            .price{
+                right: 1rem;
+                }
+            .check-icon {
+                @include m.flex-center();
+                animation: slideRight 0.5s ease forwards, fadeOut 0.5s ease forwards; 
+                // glissement vers la gauche de l'icone check au survol de item
+                    }
+            } 
         
         }
     }
@@ -182,6 +192,29 @@ a{
     }
     100% {
         transform: translateX(0%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0%); 
+    }
+    100% {
+        transform: translateX(10%); 
+        display: none; 
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0; 
+        display: none;
     }
 }
 
