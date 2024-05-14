@@ -2,10 +2,7 @@
 @use '../sass/mixins' as m;
 @use "../sass/reset";
 
-body {
-    font-family: v.$font-roboto;
-    font-weight: 500;
-}
+
 
 a{
     text-decoration: none;

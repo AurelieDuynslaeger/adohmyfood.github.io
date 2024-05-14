@@ -2,10 +2,7 @@
 @use '../sass/mixins' as m;
 @use '../sass/reset';
 
-body {
-    font-family: v.$font-roboto;
-    font-weight: 500;
-}
+
 
 a{
     text-decoration: none;
@@ -420,6 +417,7 @@ a{
            }
         }
     }
+    
  }
 
  @media screen and (min-width: 993px) and (max-width: v.$xl-breakpoint){
@@ -436,6 +434,9 @@ a{
            .card-like i {
             right: 200px;
            }
+        }
+        .order{
+            width: 50%;
         }
     }
  }
@@ -458,8 +459,11 @@ a{
             right: 200px;
            }
         }
-        
+        .order{
+            width: 50%;
+        }
     }
+    
  }
 
  @media screen and (min-width: 1201px) and (max-width: v.$xxxl-breakpoint){
@@ -477,6 +481,9 @@ a{
             right: 250px;
            }
         }
+        .order{
+            width: 40%;
+        }
     }
  }
 
@@ -486,6 +493,7 @@ a{
             width: 35%;
         }
     }
+   
     .restaurant-cover{
         margin-bottom: 55px;
     }
@@ -498,6 +506,16 @@ a{
            .card-like i {
             right: 300px;
            }
+        }
+        .menu-items{
+            display: flex;
+            margin: 20px;
+            .items{
+                flex-basis: 30%;
+            }
+        }
+        .order{
+            width: 30%;
         }
     }
  }

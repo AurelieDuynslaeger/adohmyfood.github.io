@@ -412,6 +412,9 @@ a {
   .restaurant-menu .restaurant-title .card-like i {
     right: 200px;
   }
+  .restaurant-menu .order {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .header .logo {
@@ -426,6 +429,9 @@ a {
   .restaurant-menu .restaurant-title .card-like i {
     right: 200px;
   }
+  .restaurant-menu .order {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
   .header .logo {
@@ -436,6 +442,9 @@ a {
   }
   .restaurant-menu .restaurant-title .card-like i {
     right: 250px;
+  }
+  .restaurant-menu .order {
+    width: 40%;
   }
 }
 @media screen and (min-width: 1401px) {
@@ -450,6 +459,16 @@ a {
   }
   .restaurant-menu .restaurant-title .card-like i {
     right: 300px;
+  }
+  .restaurant-menu .menu-items {
+    display: flex;
+    margin: 20px;
+  }
+  .restaurant-menu .menu-items .items {
+    flex-basis: 30%;
+  }
+  .restaurant-menu .order {
+    width: 30%;
   }
 }
 
