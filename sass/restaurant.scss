@@ -51,7 +51,7 @@ a{
     position: relative;
     .restaurant-title{
         display: flex;
-        justify-content: flex-start;
+        justify-content:space-around;
         align-items: center;
         position: relative;
         padding: 20px;
@@ -63,8 +63,8 @@ a{
         .card-like i {
             font-size: 25px;
             position: absolute;
-            right: 5%;
-            bottom: 40%;
+            right: 40px;
+            bottom: 38%;
         }
         .card-like .full{
             opacity: 0;
@@ -79,9 +79,12 @@ a{
             }
         }
     }
+
     .menu-items{
         margin: 10px;
         .items{
+            width:80%;
+            margin:auto;
             margin-bottom: 30px;
             .items-title{
                 position: relative;
@@ -137,6 +140,7 @@ a{
                 height: 100%;
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
+                transform: translateY(-50%);
             }
             .check-icon i {
                 color: white; 
@@ -148,9 +152,10 @@ a{
                @include m.flex-center();
                 position: absolute;
                 right: 0;
-                top: 50%;
-                transform: translateY(-50%);
+                top: 0;
                 background-color: v.$color-tertiary;
+                animation: slideLeft 0.5s ease forwards; 
+                //glissement vers la gauche de l'icone check au survol de item
             }
             .item-price {
                 position: absolute;
@@ -167,6 +172,33 @@ a{
                 }
             }
         }
+        .item:not(:hover) {
+            .check-icon {
+                animation: slideRight 0.5s ease forwards; //glisssement vers la droite de l'icone check
+        }  
+        }
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        display: none;
+        transform: translateX(100%); 
+    }
+    100% {
+        // display: block;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        // display: block;
+        transform: translateX(0%); /* Départ à gauche */
+    }
+    100% {
+        display: none;
+        transform: translateX(100%); /* Arrivée à droite */
     }
 }
     .order{
@@ -261,78 +293,26 @@ a{
     animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: v.$md-breakpoint) and (max-width: v.$lg-breakpoint){
-    .header{
-        .logo {
-            width: 30%;
-            padding: 30px;
-        }
-    }
+@media screen and (min-width: 577px) and (max-width: v.$sm-breakpoint){
+
     .restaurant-cover{
-        margin-bottom: -150px;
+        margin-bottom: -90px;
     }
     .restaurant-menu {
-        width: 85%;
-        margin: auto;
         .restaurant-title{
-           justify-content: center;
             .card-like i {
-                right: 22%;
-            }
-        }
-        .menu-items{
-            margin: 10px;
-            .items{
-                width: 80%;
-                margin: auto;
-                margin-bottom: 20px;
-                .item{
-                    width: 90%;
-                    margin: auto;
-                    margin-top: 20px;
-                    margin-left:0;
-                    position: relative;
-                }
-                .item:hover{
-                    .item-price {
-                        right: 80px;
-                    }
-                }
+                right: 150px;
             }
         }
     }
-
-    .footer{
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        height: 100px;
-        p {
-            margin: 0;
-            order: 2;
-        }
-        .footer-nav ul{
-            display: flex;
-            margin-inline: 20px;
-        }
-        .footer-nav ul li{
-            padding-inline: 5px;
-        }
-     }
  }
 
- @media screen and (min-width: v.$lg-breakpoint) and (max-width: v.$xl-breakpoint){
-    .header{
-        .logo {
-            width: 30%;
-        }
-    }
+ @media screen and (min-width: 641px) and (max-width: v.$md-breakpoint){
+
     .restaurant-cover{
         margin-bottom: -100px;
     }
     .restaurant-menu {
-        width: 85%;
-        margin: auto;
         .restaurant-title{
            justify-content: center;
             .card-like i {
@@ -360,56 +340,129 @@ a{
             }
         }
     }
-
-    .footer{
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        height: 100px;
-        p {
-            margin: 0;
-            order: 2;
-        }
-        .footer-nav ul{
-            display: flex;
-            margin-inline: 20px;
-        }
-        .footer-nav ul li{
-            padding-inline: 5px;
-        }
-     }
  }
 
- @media screen and (min-width: v.$xl-breakpoint){
+ @media screen and (min-width: 641px) and (max-width: v.$md-breakpoint){
+    .restaurant-cover{
+        margin-bottom: -80px;
+    }
+    .restaurant-menu {
+        .restaurant-title{
+           h3{
+            font-size: 30px;
+           }
+           .card-like i {
+            right: 110px;
+           }
+        }
+        .menu-items{
+            .items{
+                
+                .item{
+                    width: 100%;
+                }
+                .item:hover{
+                    .item-price {
+                        right: 60px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @media screen and (min-width : 769px) {
+        .footer{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100px;
+            p {
+                margin: 0;
+                order: 2;
+            }
+            .footer-nav ul{
+                display: flex;
+                margin-inline: 20px;
+            }
+            .footer-nav ul li{
+                padding-inline: 5px;
+            }
+         }
+     }
+
+ @media screen and (min-width: 769px) and (max-width: v.$lg-breakpoint){
     .header{
         .logo {
             width: 30%;
         }
     }
     .restaurant-cover{
-        margin-bottom: -100px;
+        margin-bottom: -50px;
     }
     .restaurant-menu {
         width: 85%;
         margin: auto;
         .restaurant-title{
-           justify-content: center;
-            .card-like i {
-                right: 25%;
-            }
+           h3{
+            font-size: 35px;
+           }
+           .card-like i {
+            right: 120px;
+           }
+        }
+    }
+ }
+
+ @media screen and (min-width: 993px) and (max-width: v.$xl-breakpoint){
+    .header{
+        .logo {
+            width: 28%;
+        }
+    }
+    .restaurant-cover{
+        margin-bottom: 10px;
+    }
+    .restaurant-menu {
+        .restaurant-title{
+           .card-like i {
+            right: 200px;
+           }
         }
         .menu-items{
-            margin: 10px;
             .items{
-                width: 80%;
-                margin: auto;
-                margin-bottom: 20px;
+                .item:hover{
+                    .item-price {
+                        right: 90px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @media screen and (min-width: 1025px) and (max-width: v.$xxl-breakpoint){
+    .header{
+        .logo {
+            width: 28%;
+        }
+    }
+    .restaurant-cover{
+        margin-bottom: 10px;
+    }
+    .restaurant-menu {
+        .restaurant-title{
+            h3{
+                font-size: 40px;
+            }
+           .card-like i {
+            right: 200px;
+           }
+        }
+        .menu-items{
+            .items{
                 .item{
-                    width: 90%;
-                    margin: auto;
-                    margin-top: 20px;
-                    margin-left:0;
-                    position: relative;
+                    width: 100%;
                 }
                 .item:hover{
                     .item-price {
@@ -419,24 +472,62 @@ a{
             }
         }
     }
+ }
 
-    .footer{
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        height: 100px;
-        p {
-            margin: 0;
-            order: 2;
+ @media screen and (min-width: 1201px) and (max-width: v.$xxxl-breakpoint){
+    .header{
+        .logo {
+            width: 27%;
         }
-        .footer-nav ul{
-            display: flex;
-            margin-inline: 20px;
+    }
+    .restaurant-cover{
+        margin-bottom:25px;
+    }
+    .restaurant-menu {
+        .restaurant-title{
+           .card-like i {
+            right: 250px;
+           }
         }
-        .footer-nav ul li{
-            padding-inline: 5px;
+        .menu-items{
+            .items{
+                .item:hover{
+                    .item-price {
+                        right: 120px;
+                    }
+                }
+            }
         }
-     }
+    }
+ }
+
+ @media screen and (min-width: 1401px) {
+    .header{
+        .logo {
+            width: 35%;
+        }
+    }
+    .restaurant-cover{
+        margin-bottom: 55px;
     }
 
-    
+    .restaurant-menu {
+        .restaurant-title{
+            h3{
+                font-size: 45px;
+            }
+           .card-like i {
+            right: 300px;
+           }
+        }
+        .menu-items{
+            .items{
+                .item:hover{
+                    .item-price {
+                        right: 140px;
+                    }
+                }
+            }
+        }
+    }
+ }

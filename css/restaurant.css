@@ -53,7 +53,7 @@ a {
 }
 .restaurant-menu .restaurant-title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   position: relative;
   padding: 20px;
@@ -66,8 +66,8 @@ a {
 .restaurant-menu .restaurant-title .card-like i {
   font-size: 25px;
   position: absolute;
-  right: 5%;
-  bottom: 40%;
+  right: 40px;
+  bottom: 38%;
 }
 .restaurant-menu .restaurant-title .card-like .full {
   opacity: 0;
@@ -85,6 +85,8 @@ a {
   margin: 10px;
 }
 .restaurant-menu .menu-items .items {
+  width: 80%;
+  margin: auto;
   margin-bottom: 30px;
 }
 .restaurant-menu .menu-items .items .items-title {
@@ -140,6 +142,7 @@ a {
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  transform: translateY(-50%);
 }
 .restaurant-menu .menu-items .items .item .check-icon i {
   color: white;
@@ -151,9 +154,9 @@ a {
   align-items: center;
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   background-color: #99E2D0;
+  animation: slideLeft 0.5s ease forwards;
 }
 .restaurant-menu .menu-items .items .item:hover .item-price {
   position: absolute;
@@ -165,6 +168,27 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.restaurant-menu .menu-items .items .item:not(:hover) .check-icon {
+  animation: slideRight 0.5s ease forwards;
+}
+@keyframes slideLeft {
+  0% {
+    display: none;
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0%); /* Départ à gauche */
+  }
+  100% {
+    display: none;
+    transform: translateX(100%); /* Arrivée à droite */
+  }
 }
 .restaurant-menu .order {
   width: 70%;
@@ -267,70 +291,17 @@ a {
   animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .header .logo {
-    width: 30%;
-    padding: 30px;
-  }
+@media screen and (min-width: 577px) and (max-width: 640px) {
   .restaurant-cover {
-    margin-bottom: -150px;
-  }
-  .restaurant-menu {
-    width: 85%;
-    margin: auto;
-  }
-  .restaurant-menu .restaurant-title {
-    justify-content: center;
+    margin-bottom: -90px;
   }
   .restaurant-menu .restaurant-title .card-like i {
-    right: 22%;
-  }
-  .restaurant-menu .menu-items {
-    margin: 10px;
-  }
-  .restaurant-menu .menu-items .items {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  .restaurant-menu .menu-items .items .item {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-left: 0;
-    position: relative;
-  }
-  .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 80px;
-  }
-  .footer {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100px;
-  }
-  .footer p {
-    margin: 0;
-    order: 2;
-  }
-  .footer .footer-nav ul {
-    display: flex;
-    margin-inline: 20px;
-  }
-  .footer .footer-nav ul li {
-    padding-inline: 5px;
+    right: 150px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1160px) {
-  .header .logo {
-    width: 30%;
-  }
+@media screen and (min-width: 641px) and (max-width: 768px) {
   .restaurant-cover {
     margin-bottom: -100px;
-  }
-  .restaurant-menu {
-    width: 85%;
-    margin: auto;
   }
   .restaurant-menu .restaurant-title {
     justify-content: center;
@@ -356,6 +327,25 @@ a {
   .restaurant-menu .menu-items .items .item:hover .item-price {
     right: 90px;
   }
+}
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .restaurant-cover {
+    margin-bottom: -80px;
+  }
+  .restaurant-menu .restaurant-title h3 {
+    font-size: 30px;
+  }
+  .restaurant-menu .restaurant-title .card-like i {
+    right: 110px;
+  }
+  .restaurant-menu .menu-items .items .item {
+    width: 100%;
+  }
+  .restaurant-menu .menu-items .items .item:hover .item-price {
+    right: 60px;
+  }
+}
+@media screen and (min-width: 769px) {
   .footer {
     display: flex;
     justify-content: right;
@@ -374,57 +364,87 @@ a {
     padding-inline: 5px;
   }
 }
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .header .logo {
     width: 30%;
   }
   .restaurant-cover {
-    margin-bottom: -100px;
+    margin-bottom: -50px;
   }
   .restaurant-menu {
     width: 85%;
     margin: auto;
   }
-  .restaurant-menu .restaurant-title {
-    justify-content: center;
+  .restaurant-menu .restaurant-title h3 {
+    font-size: 35px;
   }
   .restaurant-menu .restaurant-title .card-like i {
-    right: 25%;
+    right: 120px;
   }
-  .restaurant-menu .menu-items {
-    margin: 10px;
+}
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+  .header .logo {
+    width: 28%;
   }
-  .restaurant-menu .menu-items .items {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
+  .restaurant-cover {
+    margin-bottom: 10px;
+  }
+  .restaurant-menu .restaurant-title .card-like i {
+    right: 200px;
+  }
+  .restaurant-menu .menu-items .items .item:hover .item-price {
+    right: 90px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header .logo {
+    width: 28%;
+  }
+  .restaurant-cover {
+    margin-bottom: 10px;
+  }
+  .restaurant-menu .restaurant-title h3 {
+    font-size: 40px;
+  }
+  .restaurant-menu .restaurant-title .card-like i {
+    right: 200px;
   }
   .restaurant-menu .menu-items .items .item {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-left: 0;
-    position: relative;
+    width: 100%;
   }
   .restaurant-menu .menu-items .items .item:hover .item-price {
     right: 100px;
   }
-  .footer {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100px;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .header .logo {
+    width: 27%;
   }
-  .footer p {
-    margin: 0;
-    order: 2;
+  .restaurant-cover {
+    margin-bottom: 25px;
   }
-  .footer .footer-nav ul {
-    display: flex;
-    margin-inline: 20px;
+  .restaurant-menu .restaurant-title .card-like i {
+    right: 250px;
   }
-  .footer .footer-nav ul li {
-    padding-inline: 5px;
+  .restaurant-menu .menu-items .items .item:hover .item-price {
+    right: 120px;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .header .logo {
+    width: 35%;
+  }
+  .restaurant-cover {
+    margin-bottom: 55px;
+  }
+  .restaurant-menu .restaurant-title h3 {
+    font-size: 45px;
+  }
+  .restaurant-menu .restaurant-title .card-like i {
+    right: 300px;
+  }
+  .restaurant-menu .menu-items .items .item:hover .item-price {
+    right: 140px;
   }
 }
 
