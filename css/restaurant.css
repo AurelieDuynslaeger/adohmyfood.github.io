@@ -466,6 +466,7 @@ a {
   }
   .restaurant-menu .menu-items .items {
     flex-basis: 30%;
+    margin: 0 auto;
   }
   .restaurant-menu .order {
     width: 30%;
