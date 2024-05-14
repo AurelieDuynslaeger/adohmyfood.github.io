@@ -354,7 +354,7 @@ a {
     position: relative;
   }
   .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 70px;
+    right: 90px;
   }
   .footer {
     display: flex;
@@ -407,7 +407,7 @@ a {
     position: relative;
   }
   .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 90px;
+    right: 100px;
   }
   .footer {
     display: flex;
