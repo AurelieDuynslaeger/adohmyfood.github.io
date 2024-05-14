@@ -104,90 +104,84 @@ a {
   height: 3px;
   background-color: #99E2D0;
 }
-.restaurant-menu .menu-items .items .item {
+.restaurant-menu .menu-items .item {
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
-  width: 90%;
   margin: auto;
   border-radius: 15px;
   margin-top: 20px;
-  position: relative;
-  /* icone qui apparait pour le survol d'un item */
-}
-.restaurant-menu .menu-items .items .item .item-content {
   display: flex;
   align-items: end;
   justify-content: space-between;
   padding: 15px;
   width: 100%;
+  position: relative;
 }
-.restaurant-menu .menu-items .items .item .item-content .item-txt {
+.restaurant-menu .menu-items .item .item-txt {
   width: 90%;
 }
-.restaurant-menu .menu-items .items .item .item-content .item-txt .item-title {
+.restaurant-menu .menu-items .item .item-txt .item-title {
   margin: 0;
   font-size: 18px;
 }
-.restaurant-menu .menu-items .items .item .item-content .item-txt .item-subtitle {
+.restaurant-menu .menu-items .item .item-txt .item-subtitle {
   margin-top: 5px;
   font-weight: 200;
   font-size: 15px;
 }
-.restaurant-menu .menu-items .items .item .item-content .item-price p {
+.restaurant-menu .menu-items .item .price {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  transition: right 0.5s ease;
+}
+.restaurant-menu .menu-items .item .price p {
   margin: 0;
   font-size: 12px;
 }
-.restaurant-menu .menu-items .items .item .check-icon {
+.restaurant-menu .menu-items .item .check-icon {
   display: none;
-  width: 10%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #99E2D0;
+  width: 3.1rem;
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transform: translateY(-50%);
 }
-.restaurant-menu .menu-items .items .item .check-icon i {
+.restaurant-menu .menu-items .item .check-icon i {
   color: white;
   font-size: 24px;
 }
-.restaurant-menu .menu-items .items .item:hover .check-icon {
+.restaurant-menu .menu-items .item:hover {
+  justify-content: space-around;
+}
+.restaurant-menu .menu-items .item:hover .price {
+  right: 3.2rem;
+}
+.restaurant-menu .menu-items .item:hover .check-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: #99E2D0;
   animation: slideLeft 0.5s ease forwards;
 }
-.restaurant-menu .menu-items .items .item:hover .item-price {
-  position: absolute;
-  right: 70px;
-  bottom: 10px;
-}
-.restaurant-menu .menu-items .items .item:hover .item-txt .item-title, .restaurant-menu .menu-items .items .item:hover .item-txt .item-subtitle {
+.restaurant-menu .menu-items .item:hover .item-txt .item-title, .restaurant-menu .menu-items .item:hover .item-txt .item-subtitle {
   max-width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.restaurant-menu .menu-items .items .item:not(:hover) .check-icon {
-  animation: slideRight 0.5s ease forwards;
-}
 @keyframes slideLeft {
   0% {
-    display: none;
-    transform: translateX(100%);
+    transform: translateX(25%);
   }
   100% {
     transform: translateX(0%);
-  }
-}
-@keyframes slideRight {
-  0% {
-    transform: translateX(0%); /* Départ à gauche */
-  }
-  100% {
-    display: none;
-    transform: translateX(100%); /* Arrivée à droite */
   }
 }
 .restaurant-menu .order {
@@ -322,10 +316,6 @@ a {
     margin: auto;
     margin-top: 20px;
     margin-left: 0;
-    position: relative;
-  }
-  .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 90px;
   }
 }
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -340,9 +330,6 @@ a {
   }
   .restaurant-menu .menu-items .items .item {
     width: 100%;
-  }
-  .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 60px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -392,9 +379,6 @@ a {
   .restaurant-menu .restaurant-title .card-like i {
     right: 200px;
   }
-  .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 90px;
-  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .header .logo {
@@ -409,12 +393,6 @@ a {
   .restaurant-menu .restaurant-title .card-like i {
     right: 200px;
   }
-  .restaurant-menu .menu-items .items .item {
-    width: 100%;
-  }
-  .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 100px;
-  }
 }
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
   .header .logo {
@@ -425,9 +403,6 @@ a {
   }
   .restaurant-menu .restaurant-title .card-like i {
     right: 250px;
-  }
-  .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 120px;
   }
 }
 @media screen and (min-width: 1401px) {
@@ -442,9 +417,6 @@ a {
   }
   .restaurant-menu .restaurant-title .card-like i {
     right: 300px;
-  }
-  .restaurant-menu .menu-items .items .item:hover .item-price {
-    right: 140px;
   }
 }
 
