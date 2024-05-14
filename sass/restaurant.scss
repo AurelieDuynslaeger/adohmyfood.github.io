@@ -2,18 +2,15 @@
 @use '../sass/mixins' as m;
 @use '../sass/reset';
 
-
 body {
     font-family: v.$font-roboto;
     font-weight: 500;
 }
 
-
 a{
     text-decoration: none;
     color: unset;
 }
-
 
 .header{
     width: 100%;
@@ -26,8 +23,7 @@ a{
     }
     i{
         margin-left: 10px;
-    }
-   
+    } 
 }
 
 .restaurant-cover{
@@ -102,7 +98,6 @@ a{
                 background-color: v.$color-tertiary; 
             }
         }
-
         .item{
             @include m.box-shadow();
             margin: auto;
@@ -133,7 +128,7 @@ a{
                     bottom: 0;
                     display: flex;
                     align-items:center;
-                    padding-right: 5px; // Ajustement pour l'espace entre le prix et la div .check-icon
+                    padding-right: 5px; 
                     transition: right 0.5s ease;
                     p{
                         margin: 0;
