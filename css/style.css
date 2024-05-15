@@ -152,6 +152,11 @@ h5 {
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
   background: linear-gradient(0deg, #9356dc 0%, rgba(255, 121, 218, 0.7) 100%);
 }
+@media screen and (min-width: 992px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
 
 .steps {
   height: 400px;
@@ -167,7 +172,7 @@ h5 {
   height: 300px;
 }
 .steps .steps-items .step {
-  width: 85%;
+  width: 70%;
   margin: auto;
   height: 60px;
   display: flex;
@@ -212,6 +217,11 @@ h5 {
     left: 0;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .steps .step {
+    flex-basis: 30%;
+  }
+}
 
 .restaurants {
   background-color: rgb(246, 246, 246);
@@ -219,6 +229,12 @@ h5 {
 }
 .restaurants .restaurants-cards a {
   height: 250px;
+}
+@media screen and (min-width: 992px) {
+  .restaurants .restaurants-cards a {
+    flex-basis: 45%;
+    height: fit-content;
+  }
 }
 .restaurants .restaurants-cards .card {
   width: 90%;
@@ -270,6 +286,13 @@ h5 {
   background-clip: text;
   color: transparent;
 }
+@media screen and (min-width: 992px) {
+  .restaurants .restaurants-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 
 .footer {
   background-color: #353535;
@@ -303,24 +326,6 @@ h5 {
   }
   .footer .footer-nav ul li {
     padding-inline: 10px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .hero h1 {
-    font-size: 30px;
-  }
-  .steps .step {
-    flex-basis: 30%;
-  }
-  .restaurants .restaurants-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .restaurants .restaurants-cards a {
-    flex-basis: 45%;
-    height: fit-content;
   }
 }
 

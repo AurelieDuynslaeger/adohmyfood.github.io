@@ -121,6 +121,11 @@ h5{
     .btn {
         @include m.button(linear-gradient(0deg,#9356dc 0%, #ff79da 100%), white, linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%));
     }
+    @media screen and (min-width: v.$lg-breakpoint){
+        h1{
+            font-size: 30px;
+        }
+    }
 }
 
 .steps{
@@ -133,7 +138,7 @@ h5{
         justify-content: space-around;
         height: 300px;
         .step{
-            width: 85%;
+            width: 70%;
             margin: auto;
             height: 60px;
             @include m.flex-center();
@@ -177,9 +182,12 @@ h5{
             span{
                 left:0;
             }
+        @media screen and (min-width: v.$lg-breakpoint){
+                    flex-basis: 30%;  
+                }
+            }
         }
     }
-}
 
 .restaurants{
     background-color: v.$color-bg-primary;
@@ -187,6 +195,10 @@ h5{
     .restaurants-cards{
         a {
             height: 250px;
+            @media screen and (min-width: v.$lg-breakpoint){
+                flex-basis: 45%;
+                height: fit-content;
+            }
         }
         .card{
             width: 90%;
@@ -238,8 +250,14 @@ h5{
                 }
             }
         }
+        @media screen and (min-width: v.$lg-breakpoint){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
     }
 }
+
 .footer{
     background-color: #353535;
     color: white;
@@ -272,34 +290,3 @@ h5{
         }
     }
 }
-
- @media screen and (min-width: v.$lg-breakpoint){
-
-    // .header{
-    //     .logo {
-    //         width: 20%;
-    //         padding: 30px;
-    //     }
-    // }
-    .hero{
-        h1{
-           font-size: 30px;
-        }
-    }
-    .steps{
-        .step{
-            flex-basis: 30%;  
-        }
-    }
-    .restaurants{
-        .restaurants-cards{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            a {
-                flex-basis: 45%;
-                height: fit-content;
-            }
-        }
-    }
- }
