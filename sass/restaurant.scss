@@ -167,14 +167,24 @@
             .check-icon {
                 @include m.flex-center();
                 animation: slideRight 0.5s ease forwards, fadeOut 0.5s ease forwards; 
-                // glissement vers la gauche de l'icone check au survol de item
+                // glissement vers la droite et fade de l'icone check au survol de item
                     }
             } 
-        
         }
     }
-    
-
+    .order{
+        width: 70%;
+        margin: auto;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+            @include m.button(linear-gradient(0deg,#9356dc 0%, #ff79da 100%), white, linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%));
+            width: 50%;
+        }
+    }
+}
 
 @keyframes slideLeft {
     0% {
@@ -211,19 +221,6 @@
     }
 }
 
-    .order{
-        width: 70%;
-        margin: auto;
-        padding: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .btn {
-            @include m.button(linear-gradient(0deg,#9356dc 0%, #ff79da 100%), white, linear-gradient(0deg,#9356dc 0%, rgba(255,121,218,0.7) 100%));
-            width: 50%;
-        }
-    }
-}
 
 .footer{
     background-color: #353535;
@@ -251,7 +248,7 @@
 }
 
 
-/* anim menu titre */
+/* anim menus et titre */
 @keyframes fadeInTitle {
     0% {
         opacity: 0;
@@ -281,25 +278,27 @@
 }
 
 /* anim pour chaque élément tour à tour */
-.items a{
+.items .item{
     opacity: 0; /* initialement invisibles */
 }
 
-.items a:nth-child(1) {
-    animation: fadeInItem 0.5s ease forwards; 
+
+//apparition de chaque entrée/plat/dessert
+.items .item:nth-child(1) {
+    animation: fadeInItem 0.5s ease forwards;
 }
 
-.items a:nth-child(2) {
+.items .item:nth-child(2) {
     animation: fadeInItem 0.5s ease forwards 0.5s; 
 }
 
-.items a:nth-child(3) {
+.items .item:nth-child(3) {
     animation: fadeInItem 0.5s ease forwards 0.9s; 
 }
-.items a:nth-child(4) {
+.items .item:nth-child(4) {
     animation: fadeInItem 0.5s ease forwards 1.3s; 
 }
-.items a:nth-child(5) {
+.items .item:nth-child(5) {
     animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 

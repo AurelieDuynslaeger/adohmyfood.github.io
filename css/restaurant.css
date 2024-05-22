@@ -185,6 +185,32 @@ a {
   align-items: center;
   animation: slideRight 0.5s ease forwards, fadeOut 0.5s ease forwards;
 }
+.restaurant-menu .order {
+  width: 70%;
+  margin: auto;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant-menu .order .btn {
+  border: none;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.restaurant-menu .order .btn:hover {
+  box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
+  background: linear-gradient(0deg, #9356dc 0%, rgba(255, 121, 218, 0.7) 100%);
+}
+
 @keyframes slideLeft {
   0% {
     transform: translateX(25%);
@@ -217,32 +243,6 @@ a {
     display: none;
   }
 }
-.restaurant-menu .order {
-  width: 70%;
-  margin: auto;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.restaurant-menu .order .btn {
-  border: none;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  color: white;
-  padding: 14px 28px;
-  border-radius: 25px;
-  font-weight: 400;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-.restaurant-menu .order .btn:hover {
-  box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
-  background: linear-gradient(0deg, #9356dc 0%, rgba(255, 121, 218, 0.7) 100%);
-}
-
 .footer {
   background-color: #353535;
   color: white;
@@ -266,7 +266,7 @@ a {
   padding-right: 3px;
 }
 
-/* anim menu titre */
+/* anim menus et titre */
 @keyframes fadeInTitle {
   0% {
     opacity: 0;
@@ -294,27 +294,27 @@ a {
 }
 
 /* anim pour chaque élément tour à tour */
-.items a {
+.items .item {
   opacity: 0; /* initialement invisibles */
 }
 
-.items a:nth-child(1) {
+.items .item:nth-child(1) {
   animation: fadeInItem 0.5s ease forwards;
 }
 
-.items a:nth-child(2) {
+.items .item:nth-child(2) {
   animation: fadeInItem 0.5s ease forwards 0.5s;
 }
 
-.items a:nth-child(3) {
+.items .item:nth-child(3) {
   animation: fadeInItem 0.5s ease forwards 0.9s;
 }
 
-.items a:nth-child(4) {
+.items .item:nth-child(4) {
   animation: fadeInItem 0.5s ease forwards 1.3s;
 }
 
-.items a:nth-child(5) {
+.items .item:nth-child(5) {
   animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
