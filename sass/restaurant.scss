@@ -31,7 +31,7 @@
     background-color: v.$color-bg-primary;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    margin-top: -100px;
+    margin-top: -90px;
     z-index: 2;
     width: 100%;
     position: relative;
@@ -304,213 +304,50 @@
     animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: 577px) and (max-width: v.$sm-breakpoint){
 
-    .restaurant-cover{
-        margin-bottom: -90px;
-    }
-    .restaurant-menu {
-        .restaurant-title{
-            .card-like i {
-                right: 150px;
-            }
-        }
-    }
- }
 
- @media screen and (min-width: 641px) and (max-width: v.$md-breakpoint){
-
-    .restaurant-cover{
-        margin-bottom: -100px;
-    }
-    .restaurant-menu {
-        .restaurant-title{
-           justify-content: center;
-            .card-like i {
-                right: 25%;
-            }
-        }
-        .menu-items{
-            margin: 10px;
-            .items{
-                width: 80%;
-                margin: auto;
-                margin-bottom: 20px;
-                .item{
-                    width: 90%;
-                    margin: auto;
-                    margin-top: 20px;
-                    margin-left:0;
-                }
-            }
-        }
-    }
- }
-
- @media screen and (min-width: 641px) and (max-width: v.$md-breakpoint){
-    .restaurant-cover{
-        margin-bottom: -80px;
-    }
-    .restaurant-menu {
-        .restaurant-title{
-           h3{
-            font-size: 30px;
-           }
-           .card-like i {
-            right: 110px;
-           }
-        }
-        .menu-items{
-            .items{
-                .item{
-                    width: 100%;
-                }
-            }
-        }
-    }
- }
-
- @media screen and (min-width : 769px) {
-        .footer{
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            height: 100px;
-            p {
-                margin: 0;
-                order: 2;
-            }
-            .footer-nav ul{
-                display: flex;
-                margin-inline: 20px;
-            }
-            .footer-nav ul li{
-                padding-inline: 5px;
-            }
-         }
-     }
-
- @media screen and (min-width: 769px) and (max-width: v.$lg-breakpoint){
+ @media screen and (min-width : v.$md-breakpoint) {
     .header{
         .logo {
             width: 30%;
         }
     }
     .restaurant-cover{
-        margin-bottom: -50px;
+        margin-bottom: -60px;
     }
     .restaurant-menu {
         width: 85%;
         margin: auto;
-        .restaurant-title{
-           h3{
-            font-size: 35px;
-           }
-           .card-like i {
-            right: 120px;
-           }
-        }
     }
-    
- }
-
- @media screen and (min-width: 993px) and (max-width: v.$xl-breakpoint){
-    .header{
-        .logo {
-            width: 28%;
+    .footer{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 100px;
+        p {
+            margin: 0;
+            order: 2;
         }
-    }
-    .restaurant-cover{
-        margin-bottom: 10px;
-    }
-    .restaurant-menu {
-        .restaurant-title{
-           .card-like i {
-            right: 200px;
-           }
-        }
-        .order{
-            width: 50%;
-        }
-    }
- }
-
- @media screen and (min-width: 1025px) and (max-width: v.$xxl-breakpoint){
-    .header{
-        .logo {
-            width: 28%;
-        }
-    }
-    .restaurant-cover{
-        margin-bottom: 10px;
-    }
-    .restaurant-menu {
-        .restaurant-title{
-            h3{
-                font-size: 40px;
-            }
-           .card-like i {
-            right: 200px;
-           }
-        }
-        .order{
-            width: 50%;
-        }
-    }
-    
- }
-
- @media screen and (min-width: 1201px) and (max-width: v.$xxxl-breakpoint){
-    .header{
-        .logo {
-            width: 27%;
-        }
-    }
-    .restaurant-cover{
-        margin-bottom:25px;
-    }
-    .restaurant-menu {
-        .restaurant-title{
-           .card-like i {
-            right: 250px;
-           }
-        }
-        .order{
-            width: 40%;
-        }
-    }
- }
-
- @media screen and (min-width: 1401px) {
-    .header{
-        .logo {
-            width: 35%;
-        }
-    }
-   
-    .restaurant-cover{
-        margin-bottom: 55px;
-    }
-
-    .restaurant-menu {
-        .restaurant-title{
-            h3{
-                font-size: 45px;
-            }
-           .card-like i {
-            right: 300px;
-           }
-        }
-        .menu-items{
+        .footer-nav ul{
             display: flex;
-            margin: 20px;
-            .items{
-                flex-basis: 30%;
-                margin: 0 auto;
-            }
+            margin-inline: 20px;
         }
+        .footer-nav ul li{
+            padding-inline: 5px;
+        }
+        }
+     }
+
+
+ @media screen and (min-width: v.$xl-breakpoint){
+    .header{
+        .logo {
+            width: 20%;
+        }
+    }
+    .restaurant-menu {
         .order{
-            width: 30%;
+            width: 50%;
         }
     }
  }

@@ -25,7 +25,7 @@ h5 {
   font-size: 20px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   h3 {
     padding-left: 50px;
   }
@@ -110,7 +110,7 @@ h5 {
   width: 50%;
   padding: 10px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .header .logo {
     width: 30%;
     padding: 30px;
@@ -152,7 +152,7 @@ h5 {
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.34);
   background: linear-gradient(0deg, #9356dc 0%, rgba(255, 121, 218, 0.7) 100%);
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .hero h1 {
     font-size: 30px;
   }
@@ -217,7 +217,7 @@ h5 {
     left: 0;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 992px) {
+@media screen and (min-width: 768px) and (min-width: 1024px) {
   .steps .step {
     flex-basis: 30%;
   }
@@ -230,7 +230,7 @@ h5 {
 .restaurants .restaurants-cards a {
   height: 250px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants-cards a {
     flex-basis: 45%;
     height: fit-content;
@@ -286,7 +286,7 @@ h5 {
   background-clip: text;
   color: transparent;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants-cards {
     display: flex;
     flex-wrap: wrap;

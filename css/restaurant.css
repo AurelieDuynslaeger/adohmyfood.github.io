@@ -46,7 +46,7 @@ a {
   background-color: rgb(246, 246, 246);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  margin-top: -100px;
+  margin-top: -90px;
   z-index: 2;
   width: 100%;
   position: relative;
@@ -316,54 +316,17 @@ a {
   animation: fadeInItem 0.5s ease forwards 1.7s;
 }
 
-@media screen and (min-width: 577px) and (max-width: 640px) {
+@media screen and (min-width: 768px) {
+  .header .logo {
+    width: 30%;
+  }
   .restaurant-cover {
-    margin-bottom: -90px;
+    margin-bottom: -60px;
   }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 150px;
-  }
-}
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  .restaurant-cover {
-    margin-bottom: -100px;
-  }
-  .restaurant-menu .restaurant-title {
-    justify-content: center;
-  }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 25%;
-  }
-  .restaurant-menu .menu-items {
-    margin: 10px;
-  }
-  .restaurant-menu .menu-items .items {
-    width: 80%;
+  .restaurant-menu {
+    width: 85%;
     margin: auto;
-    margin-bottom: 20px;
   }
-  .restaurant-menu .menu-items .items .item {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-}
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  .restaurant-cover {
-    margin-bottom: -80px;
-  }
-  .restaurant-menu .restaurant-title h3 {
-    font-size: 30px;
-  }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 110px;
-  }
-  .restaurant-menu .menu-items .items .item {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 769px) {
   .footer {
     display: flex;
     justify-content: right;
@@ -382,92 +345,12 @@ a {
     padding-inline: 5px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 1024px) {
   .header .logo {
-    width: 30%;
-  }
-  .restaurant-cover {
-    margin-bottom: -50px;
-  }
-  .restaurant-menu {
-    width: 85%;
-    margin: auto;
-  }
-  .restaurant-menu .restaurant-title h3 {
-    font-size: 35px;
-  }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 120px;
-  }
-}
-@media screen and (min-width: 993px) and (max-width: 1024px) {
-  .header .logo {
-    width: 28%;
-  }
-  .restaurant-cover {
-    margin-bottom: 10px;
-  }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 200px;
+    width: 20%;
   }
   .restaurant-menu .order {
     width: 50%;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .header .logo {
-    width: 28%;
-  }
-  .restaurant-cover {
-    margin-bottom: 10px;
-  }
-  .restaurant-menu .restaurant-title h3 {
-    font-size: 40px;
-  }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 200px;
-  }
-  .restaurant-menu .order {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
-  .header .logo {
-    width: 27%;
-  }
-  .restaurant-cover {
-    margin-bottom: 25px;
-  }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 250px;
-  }
-  .restaurant-menu .order {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .header .logo {
-    width: 35%;
-  }
-  .restaurant-cover {
-    margin-bottom: 55px;
-  }
-  .restaurant-menu .restaurant-title h3 {
-    font-size: 45px;
-  }
-  .restaurant-menu .restaurant-title .card-like i {
-    right: 300px;
-  }
-  .restaurant-menu .menu-items {
-    display: flex;
-    margin: 20px;
-  }
-  .restaurant-menu .menu-items .items {
-    flex-basis: 30%;
-    margin: 0 auto;
-  }
-  .restaurant-menu .order {
-    width: 30%;
   }
 }
 
