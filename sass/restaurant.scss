@@ -39,30 +39,51 @@
         display: flex;
         justify-content:center;
         align-items: center;
-        // position: relative;
         padding: 20px;
         h1{
             font-family: v.$font-shrikhand;
             font-size: 25px;
             margin-right: 20px;
         }
-        .card-like i {
-            font-size: 25px;
-            // position: absolute;
-            // right: 40px;
-            // bottom: 38%;
-        }
-        .card-like .full{
-            display: none;
-            opacity: 0;
-            transition-property: all;
-            transition-duration: 0.5s;
-            &:hover{
-                opacity: 1;
+        .card-like {
+            position: relative;
+            display: inline-block;
+        
+            i {
+                font-size: 25px;
+                cursor: pointer;
+                background: black;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        
+            .empty {
+                position: relative;
+                z-index: 2;
+        
+                &:hover {
+                    z-index: 0;
+                }
+        
+                &:hover ~ .full {
+                    z-index: 3;
+                    opacity: 1;
+                    transform: scale(1);
+                    transition: opacity 0.5s, transform 0.5s, z-index 0s;
+                }
+            }
+        
+            .full {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 0;
+                transform: scale(0);
+                transition: opacity 0.5s, transform 0.5s, z-index 0s 0.5s;
                 background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
                 -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
+                background-clip:transparent;
             }
         }
     }
@@ -97,7 +118,6 @@
             margin-top: 20px;
             display: flex;
             align-items: end;
-            justify-content:center;
             padding: 15px;
             width:100%;   
             position: relative;
@@ -144,7 +164,6 @@
                     }  
                 }
         &:hover{
-            justify-content: space-around;
             .price{
                 right: 3.2rem;
                 }

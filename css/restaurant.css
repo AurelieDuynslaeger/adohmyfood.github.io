@@ -62,21 +62,41 @@ a {
   font-size: 25px;
   margin-right: 20px;
 }
+.restaurant-menu .restaurant-title .card-like {
+  position: relative;
+  display: inline-block;
+}
 .restaurant-menu .restaurant-title .card-like i {
   font-size: 25px;
+  cursor: pointer;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant-menu .restaurant-title .card-like .empty {
+  position: relative;
+  z-index: 2;
+}
+.restaurant-menu .restaurant-title .card-like .empty:hover {
+  z-index: 0;
+}
+.restaurant-menu .restaurant-title .card-like .empty:hover ~ .full {
+  z-index: 3;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s, transform 0.5s, z-index 0s;
 }
 .restaurant-menu .restaurant-title .card-like .full {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   opacity: 0;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-.restaurant-menu .restaurant-title .card-like .full:hover {
-  opacity: 1;
+  transform: scale(0);
+  transition: opacity 0.5s, transform 0.5s, z-index 0s 0.5s;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  background-clip: transparent;
 }
 .restaurant-menu .menu-items {
   margin: 10px;
@@ -109,7 +129,6 @@ a {
   margin-top: 20px;
   display: flex;
   align-items: end;
-  justify-content: center;
   padding: 15px;
   width: 100%;
   position: relative;
@@ -155,9 +174,6 @@ a {
 .restaurant-menu .menu-items .item .check-icon i {
   color: white;
   font-size: 24px;
-}
-.restaurant-menu .menu-items .item:hover {
-  justify-content: space-around;
 }
 .restaurant-menu .menu-items .item:hover .price {
   right: 3.2rem;
