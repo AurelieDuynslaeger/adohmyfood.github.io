@@ -39,6 +39,7 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 
 Finis, les temps d'attente au restaurant !
 
+<img src="Homepage.png" alt="Logo" width="500">
 
 ## Langages utilisés
 
