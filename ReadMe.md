@@ -41,11 +41,9 @@ Finis, les temps d'attente au restaurant !
 
 <img src="Homepage.png" alt="Logo" width="500">
 
-## Langages utilisés
+## Langages utilisés et autres technologies
 
-* [![HTML5][html.com]][html-url]
-* [![CSS3][css.com]][css-url]
-* [![SASS][sass.com]][sass-url]
+![Figma](https://img.shields.io/badge/Figma-a259ff?style=for-the-badge&logo=figma&logoColor=white)![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 ## Missions
 
